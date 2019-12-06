@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kg.flaterlab.myplants.Adapter.MyAdapter
+import kg.flaterlab.myplants.adapter.MyAdapter
 
 class MainActivity : AppCompatActivity() {
     private lateinit var viewManager :LinearLayoutManager

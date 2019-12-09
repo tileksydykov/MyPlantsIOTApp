@@ -4,6 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".adapter.Plant">
+    tools:context=".activity.PlantActivity">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/text"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="25sp"
+           android:text="name"
+           android:textColor="#000000"
+           android:layout_margin="20dp"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <TextView
+           android:id="@+id/firstLabel"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Time To Water "
+           android:layout_margin="20dp"
+           android:labelFor="@+id/time"
+           app:layout_constraintTop_toBottomOf="@+id/time" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <Spinner
+              android:id="@+id/spinner_hour"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_margin="20dp"
+              android:layout_weight="1"
+              android:entries="@array/hours" />
+
+          <Spinner
+              android:id="@+id/spinner_minutes"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:layout_margin="20dp"
+              android:entries="@array/minutes" />
+      </LinearLayout>
+
+       <TextView
+           android:id="@+id/secondLabel"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Time To Water "
+           android:layout_margin="20dp"
+           android:labelFor="@+id/time"
+           app:layout_constraintTop_toBottomOf="@+id/time" />
+
+       <Spinner
+           android:id="@+id/spinner"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="20dp"
+           android:entries="@array/volumes" />
+
+       <Button
+           android:id="@+id/button2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="30dp"
+           android:backgroundTint="@color/colorAccent"
+           android:textColor="#ffffff"
+           android:text="Update Plant Plan" />
+
+       <Button
+           android:id="@+id/button3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="30dp"
+           android:backgroundTint="@color/colorAccent"
+           android:textColor="#ffffff"
+           android:text="Water now" />
+   </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

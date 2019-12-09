@@ -1,4 +1,7 @@
 package kg.flaterlab.myplants.model
 
-class Plant {
-}
+data class Plant(
+        val id : Int,
+        val name : String,
+        val time : String
+)
